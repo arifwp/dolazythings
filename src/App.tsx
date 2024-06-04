@@ -7,7 +7,6 @@ import LandingPage from "./pages/LandingPage";
 export const App = () => (
   <ChakraProvider theme={theme}>
     <BrowserRouter>
-      <Navbar />
       <Routes>
         <Route path="/" element={<LandingPage />} />
       </Routes>

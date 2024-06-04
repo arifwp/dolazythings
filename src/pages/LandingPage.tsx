@@ -1,12 +1,21 @@
+import Navbar from "../components/Navbar";
+import { About } from "../sections/About";
 import Home from "../sections/Home";
 import { Options } from "../sections/Options";
+import { PageContainer } from "./PageContainer";
 
 const LandingPage = () => {
   return (
     <>
-      <Home />
+      <PageContainer>
+        <Navbar />
 
-      <Options />
+        <Home />
+
+        <Options />
+
+        <About />
+      </PageContainer>
     </>
   );
 };
